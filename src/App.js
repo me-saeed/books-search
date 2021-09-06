@@ -25,7 +25,7 @@ function App() {
   };
   const searchBytitle = async () => {
     setisLoading(true);
-    fetch(`http://openlibrary.org/search.json?title=${bookTitle}`)
+    fetch(`https://openlibrary.org/search.json?title=${bookTitle}`)
       .then((response) => response.json())
       .then((data) => {
         setbookTitle('');
